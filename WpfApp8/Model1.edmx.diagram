@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="71efbda5a60d4b4eb5dbcc9fdfcaa55b" Name="Diagram1">
+        <EntityTypeShape EntityType="testBaseModel.BreedTable" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.CatTable" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.FeedCatTable" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.FeedTable" Width="1.5" PointX="6" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.GenderTable" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.PassportTable" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.RoleTable" Width="1.5" PointX="3.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.TraitCat" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.TraitTable" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.Userphoto" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="testBaseModel.UserTable" Width="1.5" PointX="6" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="testBaseModel.FK_CatTable_BreedTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_CatTable_GenderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_FeedCatTable_CatTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_PassportTable_CatTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_TraitCat_CatTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_FeedCatTable_FeedTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_UserTable_GenderTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_UserTable_RoleTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_TraitCat_TraitTable" ManuallyRouted="false" />
+        <AssociationConnector Association="testBaseModel.FK_Userphoto_UserTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
