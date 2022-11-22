@@ -5,9 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize="18">
     <Grid>
-        <!--Меню с номерами станиц-->
+        <StackPanel>
+        <StackPanel>
+            <ListView Name="LVCats" Height="350">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding CatName}"></TextBlock>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackPanel>
+        <!--Меню с номерами страниц-->
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
             <GroupBox Header="Введите количество записей на одной странице">
                 <TextBox Name="txtPageCount" TextChanged="txtPageCount_TextChanged"/>
@@ -20,14 +30,6 @@
             <TextBlock Name="txt5" Uid="5" Text="{Binding  Path = NPage[4]}" Visibility="{Binding Visible[4]}" FontWeight="{Binding Bold[4]}" MouseDown="GoPage_MouseDown"/>
             <TextBlock Name="txtNext" Uid="next" Text=" &gt;" MouseDown="GoPage_MouseDown"/>
         </StackPanel>
-        <StackPanel>
-            <ListView Name="LVCats">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding CatName}"></TextBlock>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
         </StackPanel>
     </Grid>
 </Window>
